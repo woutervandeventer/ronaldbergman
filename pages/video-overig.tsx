@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import React from 'react'
+import Background from '../components/Background'
 import PageTitle from '../components/PageTitle'
 import SectionTitle from '../components/SectionTitle'
 import Video from '../components/Video'
@@ -7,6 +8,7 @@ import Video from '../components/Video'
 const VideoOverig: NextPage = () => {
   return (
     <main>
+      <Background type="video" />
       <PageTitle title="Video" />
       <section>
         <SectionTitle title="Programmaboekjes digitaliseren" />

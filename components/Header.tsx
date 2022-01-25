@@ -11,16 +11,17 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} ${showMenu && styles.showMenu}`}>
-        <Logo />
+        <Logo onClick={() => setShowMenu(false)} />
         <ul className={styles.navLinkList}>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a onClick={() => setShowMenu(false)}>Home</a>
             </Link>
           </li>
           <li>
             <Dropdown
               title="Video"
+              setShowMenu={setShowMenu}
               items={[
                 {
                   href: '/digitalisering',
@@ -39,17 +40,17 @@ const Header = () => {
           </li>
           <li>
             <Link href="/muziek">
-              <a>Muziek</a>
+              <a onClick={() => setShowMenu(false)}>Muziek</a>
             </Link>
           </li>
           <li>
             <Link href="/prijslijst">
-              <a>Prijslijst</a>
+              <a onClick={() => setShowMenu(false)}>Prijslijst</a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a>Contact</a>
+              <a onClick={() => setShowMenu(false)}>Contact</a>
             </Link>
           </li>
         </ul>

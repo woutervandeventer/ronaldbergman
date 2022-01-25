@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Background from '../components/Background'
 import PageTitle from '../components/PageTitle'
 import SectionDivider from '../components/SectionDivider'
 import SectionTitle from '../components/SectionTitle'
@@ -6,6 +7,7 @@ import SectionTitle from '../components/SectionTitle'
 const Digitalisering: NextPage = () => {
   return (
     <main>
+      <Background type="video" />
       <PageTitle title="Video" />
       <section>
         <SectionTitle title="Digitalisering" />

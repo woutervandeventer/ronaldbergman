@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import React from 'react'
+import Background from '../components/Background'
 import PageTitle from '../components/PageTitle'
 import SectionDivider from '../components/SectionDivider'
 import SectionTitle from '../components/SectionTitle'
@@ -8,6 +9,7 @@ import Video from '../components/Video'
 const Registratie: NextPage = () => {
   return (
     <main>
+      <Background type="video" />
       <PageTitle title="Video" />
       <section>
         <SectionTitle title="Registratie" />

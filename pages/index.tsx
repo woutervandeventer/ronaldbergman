@@ -1,12 +1,15 @@
 import type { NextPage } from 'next'
+import Background from '../components/Background'
 import Button from '../components/Button'
 import SectionDivider from '../components/SectionDivider'
 import Video from '../components/Video'
+import styles from '../styles/components/Index.module.scss'
 
 const Home: NextPage = () => {
   return (
     <main>
-      <h1>
+      <Background type="combined" />
+      <h1 className={styles.introText}>
         Mijn naam is Ronald Bergman en mijn passie ligt in video en muziek
       </h1>
       <Video src="https://www.youtube-nocookie.com/embed/tqD9IgLGjec" />

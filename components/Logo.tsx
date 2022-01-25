@@ -2,11 +2,15 @@ import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/components/Logo.module.scss'
 
-const Logo = () => {
+interface Props {
+  onClick: () => void
+}
+
+const Logo = ({ onClick }: Props) => {
   return (
     <div className={styles.container}>
       <Link href="/">
-        <a>FranklinStudioRony</a>
+        <a onClick={onClick}>FranklinStudioRony</a>
       </Link>
     </div>
   )

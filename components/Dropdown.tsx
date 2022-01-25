@@ -10,10 +10,16 @@ type Item = {
 interface Props {
   title: string
   items: Item[]
+  setShowMenu?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Dropdown = ({ title, items }: Props) => {
+const Dropdown = ({ title, items, setShowMenu }: Props) => {
   const [showItems, setShowItems] = useState(false)
+
+  const handleClick = () => {
+    setShowItems(false)
+    setShowMenu && setShowMenu(false)
+  }
 
   return (
     <>
@@ -22,7 +28,7 @@ const Dropdown = ({ title, items }: Props) => {
         {items.map((item, i) => (
           <li key={i}>
             <Link href={item.href}>
-              <a>{item.text}</a>
+              <a onClick={handleClick}>{item.text}</a>
             </Link>
           </li>
         ))}

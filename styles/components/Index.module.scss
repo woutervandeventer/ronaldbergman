@@ -1,0 +1,7 @@
+@use '../constants' as *;
+
+.introText {
+  color: c('dark');
+  font-weight: 900;
+  @include font-size('xl');
+}

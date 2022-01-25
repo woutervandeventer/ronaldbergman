@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: c('light');
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   @include font-size('m');
