@@ -1,0 +1,46 @@
+@use '../constants' as *;
+
+.header {
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: c('dark');
+  color: c('white');
+  @include shadow;
+
+  transform: translateX(100%);
+  transition: all 300ms ease;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.navLinkList {
+  text-align: center;
+  width: 100%;
+
+  @include block-text;
+
+  // FIXME: increase specificity on div
+
+  a,
+  div {
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
+}

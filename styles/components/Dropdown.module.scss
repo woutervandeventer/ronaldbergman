@@ -1,0 +1,17 @@
+@use '../constants' as *;
+
+.items {
+  max-height: 0;
+  transition: max-height 300ms ease;
+  overflow: hidden;
+
+  li {
+    background-color: c('light');
+    color: c('dark');
+  }
+}
+
+.showItems {
+  max-height: 10em;
+  transition: max-height 300ms ease;
+}

@@ -1,0 +1,7 @@
+@use '../constants' as *;
+
+.svg {
+  & > path {
+    fill: c('accent');
+  }
+}

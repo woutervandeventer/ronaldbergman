@@ -1,0 +1,56 @@
+@use '../constants' as *;
+
+.button {
+  position: fixed;
+  z-index: 99999;
+  top: s('xs');
+  right: s('xs');
+  height: 4em;
+  width: 4em;
+  display: flex;
+  font-size: inherit;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(c('dark'), 0.9);
+
+  div {
+    position: relative;
+    margin: auto;
+  }
+
+  div,
+  div::before,
+  div::after {
+    height: 0.25em;
+    width: 2.5em;
+    background-color: c('light');
+    border-radius: 0.5em;
+    transition: all 300ms ease;
+  }
+
+  div::before {
+    position: absolute;
+    content: '';
+    transform: translate(-50%, -0.75em);
+  }
+
+  div::after {
+    position: absolute;
+    content: '';
+    transform: translate(-50%, 0.75em);
+  }
+}
+
+.open {
+  div {
+    background-color: c('dark');
+  }
+
+  div::before {
+    transform: translate(-50%, 0) rotate(-45deg);
+  }
+
+  div::after {
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+}
