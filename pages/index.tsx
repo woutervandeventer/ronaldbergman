@@ -1,13 +1,14 @@
 import type { NextPage } from 'next'
 import Background from '../components/Background'
 import Button from '../components/Button'
+import Page from '../components/Page'
 import SectionDivider from '../components/SectionDivider'
 import Video from '../components/Video'
 import styles from '../styles/components/Index.module.scss'
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <Page>
       <Background type="combined" />
       <h1 className={styles.introText}>
         Mijn naam is Ronald Bergman en mijn passie ligt in video en muziek
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
       </p>
       <section>
         Ga verder naar:
-        <ul>
+        <ul className={styles.navigation}>
           <li>
             <Button href="/digitalisering" title="Digitalisering" />
           </li>
@@ -54,7 +55,7 @@ const Home: NextPage = () => {
           </li>
         </ul>
       </section>
-    </main>
+    </Page>
   )
 }
 

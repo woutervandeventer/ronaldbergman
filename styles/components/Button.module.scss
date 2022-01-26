@@ -1,0 +1,16 @@
+@use '../constants' as *;
+
+.button {
+  background-color: c('dark');
+  color: c('light');
+  text-decoration: none;
+  padding: s('s') s('m');
+  display: inline-block;
+  @include shadow;
+  transition: background-color 300ms ease;
+  font-weight: 600;
+
+  &:hover {
+    background-color: c('accent');
+  }
+}

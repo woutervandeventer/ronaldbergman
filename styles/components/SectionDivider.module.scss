@@ -1,6 +1,10 @@
 @use '../constants' as *;
 
 .svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   & > path {
     fill: c('accent');
   }

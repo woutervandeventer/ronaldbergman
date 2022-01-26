@@ -5,3 +5,10 @@
   font-weight: 900;
   @include font-size('xl');
 }
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s('s');
+  margin-top: s('s');
+}
