@@ -9,8 +9,11 @@
   @include shadow;
   transition: background-color 300ms ease;
   font-weight: 600;
+  border-radius: s('xxxs');
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: c('accent');
+    outline: none;
   }
 }

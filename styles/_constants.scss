@@ -47,8 +47,8 @@ $media: (
 
 @mixin block-text {
   text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  letter-spacing: 0.07em;
 }
 
 @function s($size) {
@@ -59,3 +59,7 @@ $media: (
 @function c($color) {
   @return map.get($colors, $color);
 }
+
+$margin-top: s('l');
+
+$nav-height: s('xxl');

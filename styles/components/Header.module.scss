@@ -1,6 +1,12 @@
 @use '../constants' as *;
 
 .header {
+  z-index: 99;
+
+  @include media('m') {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .nav {
@@ -24,10 +30,14 @@
   a {
     text-decoration: none;
   }
-}
 
-.showMenu {
-  transform: translateX(0);
+  @include media('m') {
+    transform: translateX(0);
+    position: static;
+    justify-content: space-between;
+    align-items: stretch;
+    height: $nav-height;
+  }
 }
 
 .navLinkList {
@@ -36,11 +46,34 @@
 
   @include block-text;
 
-  // FIXME: increase specificity on div
-
-  a,
-  div {
+  & > li > a,
+  & > li > div > span,
+  & > li > div > ul > li > a {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: s('s');
   }
+
+  @include media('m') {
+    width: auto;
+    display: flex;
+
+    & > li {
+      display: flex;
+    }
+
+    & > li > a,
+    & > li > div {
+      display: flex;
+      align-items: center;
+    }
+
+    & > li > a,
+    & > li > div > span {
+      padding: 0 s('s');
+    }
+  }
+}
+
+.showMenu {
+  transform: translateX(0);
 }

@@ -15,7 +15,9 @@ const Header = () => {
         <ul className={styles.navLinkList}>
           <li>
             <Link href="/">
-              <a onClick={() => setShowMenu(false)}>Home</a>
+              <a onClick={() => setShowMenu(false)}>
+                <span>Home</span>
+              </a>
             </Link>
           </li>
           <li>
@@ -40,17 +42,23 @@ const Header = () => {
           </li>
           <li>
             <Link href="/muziek">
-              <a onClick={() => setShowMenu(false)}>Muziek</a>
+              <a onClick={() => setShowMenu(false)}>
+                <span>Muziek</span>
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/prijslijst">
-              <a onClick={() => setShowMenu(false)}>Prijslijst</a>
+              <a onClick={() => setShowMenu(false)}>
+                <span>Prijslijst</span>
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <a onClick={() => setShowMenu(false)}>Contact</a>
+              <a onClick={() => setShowMenu(false)}>
+                <span>Contact</span>
+              </a>
             </Link>
           </li>
         </ul>

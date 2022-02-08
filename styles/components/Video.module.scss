@@ -1,7 +1,10 @@
+@use '../constants' as *;
+
 .videoWrapper {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  @include shadow;
 }
 
 .iframe {
@@ -14,4 +17,5 @@
 
 .caption {
   font-style: italic;
+  margin-top: s('xs');
 }

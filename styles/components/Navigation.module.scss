@@ -1,0 +1,8 @@
+@use '../constants' as *;
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: s('s');
+  margin-top: s('s');
+}

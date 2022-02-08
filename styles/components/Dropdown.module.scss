@@ -1,5 +1,9 @@
 @use '../constants' as *;
 
+.container {
+  position: relative;
+}
+
 .items {
   max-height: 0;
   transition: max-height 300ms ease;
@@ -11,7 +15,17 @@
   }
 }
 
+// .container:hover > ul,
 .showItems {
   max-height: 10em;
   transition: max-height 300ms ease;
+}
+
+@include media('m') {
+  .items {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+  }
 }

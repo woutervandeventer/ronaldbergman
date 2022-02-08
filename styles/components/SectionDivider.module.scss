@@ -2,8 +2,7 @@
 
 .svg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: s('xxl') auto;
 
   & > path {
     fill: c('accent');

@@ -1,0 +1,7 @@
+@use '../constants' as *;
+
+.title {
+  @include block-text;
+  margin-top: s('xxl');
+  text-align: center;
+}

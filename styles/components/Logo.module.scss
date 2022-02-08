@@ -1,9 +1,16 @@
 @use '../constants' as *;
 
-.container {
+.link {
   display: none;
+  align-items: center;
+  padding: 0 s('s');
+
+  span {
+    @include font-size('l');
+    font-weight: 600;
+  }
 
   @include media('m') {
-    display: block;
+    display: flex;
   }
 }

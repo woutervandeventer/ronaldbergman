@@ -8,11 +8,11 @@ interface Props {
 
 const Logo = ({ onClick }: Props) => {
   return (
-    <div className={styles.container}>
-      <Link href="/">
-        <a onClick={onClick}>FranklinStudioRony</a>
-      </Link>
-    </div>
+    <Link href="/">
+      <a className={styles.link} onClick={onClick}>
+        <span>FranklinStudioRony</span>
+      </a>
+    </Link>
   )
 }
 

@@ -1,11 +1,12 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
+import styles from '../styles/components/SectionTitle.module.scss'
 
 interface Props {
   title: string
 }
 
 const SectionTitle = ({ title }: Props) => {
-  return <h3>{title}</h3>
+  return <h3 className={styles.title}>{title}</h3>
 }
 
 export default SectionTitle

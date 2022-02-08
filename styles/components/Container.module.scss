@@ -1,0 +1,13 @@
+@use '../constants' as *;
+
+.container {
+  padding: s('s') s('s') s('l');
+  margin-bottom: s('xl');
+  background-color: rgba(c('light'), 0.7);
+  border-radius: s('xxxs');
+
+  & > * + *,
+  section > * + * {
+    margin-top: $margin-top;
+  }
+}

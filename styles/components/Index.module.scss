@@ -1,8 +1,11 @@
 @use '../constants' as *;
 
 .introText {
+  padding: s('xxl') 0;
   color: c('dark');
   font-weight: 900;
+  text-align: center;
+  line-height: 1.4;
   @include font-size('xl');
 }
 

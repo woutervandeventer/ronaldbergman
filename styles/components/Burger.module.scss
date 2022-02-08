@@ -54,3 +54,9 @@
     transform: translate(-50%, 0) rotate(45deg);
   }
 }
+
+@include media('m') {
+  .button {
+    display: none;
+  }
+}

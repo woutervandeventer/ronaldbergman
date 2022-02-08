@@ -1,0 +1,13 @@
+@use '../constants' as *;
+
+.nav {
+  ul {
+    list-style: disc;
+    padding-left: s('l');
+    margin-top: $margin-top;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

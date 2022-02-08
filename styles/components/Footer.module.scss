@@ -1,0 +1,9 @@
+@use '../constants' as *;
+
+.footer {
+  background-color: c('dark');
+  color: c('light');
+  text-align: center;
+  padding: s('m');
+  @include shadow;
+}
