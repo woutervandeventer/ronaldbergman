@@ -8,24 +8,34 @@
   max-height: 0;
   transition: max-height 300ms ease;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: c('dark');
 
   li {
     background-color: c('light');
     color: c('dark');
+    transition: all 250ms ease;
+
+    &:hover,
+    &:focus {
+      background-color: lighten(c('dark'), 30%);
+      color: c('light');
+    }
   }
-}
 
-// .container:hover > ul,
-.showItems {
-  max-height: 10em;
-  transition: max-height 300ms ease;
-}
-
-@include media('m') {
-  .items {
+  @include media('m') {
     position: absolute;
     left: 50%;
     top: 100%;
+    width: max-content;
     transform: translateX(-50%);
+    @include shadow;
   }
+}
+
+.showItems {
+  max-height: 9em;
+  transition: max-height 300ms ease-out;
 }

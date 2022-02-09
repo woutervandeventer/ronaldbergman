@@ -13,21 +13,6 @@ interface Props {
   setShowMenu?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const useOutsideAlerter = (
-  ref: React.MutableRefObject<null>,
-  setShowItems: React.Dispatch<React.SetStateAction<boolean>>
-) => {
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {}
-
-    document.addEventListener('mousedown', handleClickOutside)
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [ref])
-}
-
 const Dropdown = ({ title, items, setShowMenu }: Props) => {
   const [showItems, setShowItems] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
@@ -62,9 +47,16 @@ const Dropdown = ({ title, items, setShowMenu }: Props) => {
     <div
       className={styles.container}
       ref={dropdownRef}
-      onClick={() => setShowItems(!showItems)}
+      onMouseEnter={() => setShowItems(true)}
+      onMouseLeave={() => setShowItems(false)}
     >
-      <span>{title}</span>
+      <span
+        onClick={() => {
+          setShowItems(!showItems)
+        }}
+      >
+        {title}
+      </span>
       <ul className={`${styles.items} ${showItems && styles.showItems}`}>
         {items.map((item, i) => (
           <li key={i}>

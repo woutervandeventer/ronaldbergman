@@ -5,6 +5,12 @@
   align-items: center;
   padding: 0 s('s');
 
+  transition: all 250ms ease;
+
+  &:hover {
+    background-color: lighten(c('dark'), 5%);
+  }
+
   span {
     @include font-size('l');
     font-weight: 600;

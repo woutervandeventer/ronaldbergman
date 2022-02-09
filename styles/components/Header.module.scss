@@ -2,10 +2,13 @@
 
 .header {
   z-index: 99;
+  touch-action: none;
+  background-color: c('dark');
 
   @include media('m') {
     position: sticky;
     top: 0;
+    @include shadow;
   }
 }
 
@@ -22,7 +25,6 @@
 
   background-color: c('dark');
   color: c('white');
-  @include shadow;
 
   transform: translateX(100%);
   transition: all 300ms ease;
@@ -37,6 +39,8 @@
     justify-content: space-between;
     align-items: stretch;
     height: $nav-height;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -50,7 +54,7 @@
   & > li > div > span,
   & > li > div > ul > li > a {
     display: inline-block;
-    padding: s('s');
+    padding: s('s') s('m');
   }
 
   @include media('m') {
@@ -59,6 +63,11 @@
 
     & > li {
       display: flex;
+      transition: all 250ms ease;
+
+      &:hover {
+        background-color: lighten(c('dark'), 5%);
+      }
     }
 
     & > li > a,
@@ -69,7 +78,7 @@
 
     & > li > a,
     & > li > div > span {
-      padding: 0 s('s');
+      padding: 0 s('m');
     }
   }
 }

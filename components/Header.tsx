@@ -48,13 +48,6 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/prijslijst">
-              <a onClick={() => setShowMenu(false)}>
-                <span>Prijslijst</span>
-              </a>
-            </Link>
-          </li>
-          <li>
             <Link href="/contact">
               <a onClick={() => setShowMenu(false)}>
                 <span>Contact</span>
