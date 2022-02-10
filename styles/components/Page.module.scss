@@ -3,10 +3,11 @@
 .main {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(s('s'), 1fr) minmax(min-content, 61ch) minmax(
-      s('s'),
-      1fr
-    );
+  grid-template-columns: 1fr minmax(min-content, 75ch) 1fr;
+  // grid-template-columns: minmax(s('s'), 1fr) minmax(min-content, 70ch) minmax(
+  //     s('s'),
+  //     1fr
+  //   );
 
   & > * {
     grid-column: 2 / -2;

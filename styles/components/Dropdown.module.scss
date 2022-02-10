@@ -32,6 +32,7 @@
     width: max-content;
     transform: translateX(-50%);
     @include shadow;
+    border-radius: 0 0 s('xxxs') s('xxxs');
   }
 }
 

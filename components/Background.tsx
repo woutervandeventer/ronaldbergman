@@ -17,10 +17,11 @@ const Background = ({ type }: Props) => {
     case 'music':
       return (
         <div className={`${styles.background} ${styles.combined}`}>
-          <img
+          {/* <img
+            className={styles.image}
             src="/images/muziek.jpeg"
             alt="Ronald Bergman als fluitist en componist"
-          />
+          /> */}
           <div className={styles.overlay}></div>
         </div>
       )
