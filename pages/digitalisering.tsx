@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Background from '../components/Background'
 import Container from '../components/Container'
 import Page from '../components/Page'
 import PageTitle from '../components/PageTitle'
@@ -9,7 +8,6 @@ import SectionTitle from '../components/SectionTitle'
 const Digitalisering: NextPage = () => {
   return (
     <Page>
-      <Background type="video" />
       <PageTitle title="Video" />
       <Container>
         <section>

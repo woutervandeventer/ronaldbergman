@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Background from '../components/Background'
 import Container from '../components/Container'
 import Page from '../components/Page'
 import SectionDivider from '../components/SectionDivider'
@@ -9,7 +8,6 @@ import styles from '../styles/components/Index.module.scss'
 const Home: NextPage = () => {
   return (
     <Page>
-      <Background type="combined" />
       <h1 className={styles.introText}>
         Mijn naam is Ronald Bergman en mijn passie ligt in video en muziek
       </h1>

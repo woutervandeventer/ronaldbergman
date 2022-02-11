@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Mulish', sans-serif;
   @include font-size('m');
   font-weight: 400;

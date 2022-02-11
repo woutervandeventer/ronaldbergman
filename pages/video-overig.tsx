@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import React, { useRef } from 'react'
-import Background from '../components/Background'
 import Container from '../components/Container'
 import Page from '../components/Page'
 import PageTitle from '../components/PageTitle'
@@ -30,7 +29,6 @@ const VideoOverig: NextPage = () => {
 
   return (
     <Page>
-      <Background type="video" />
       <PageTitle title="Video" />
       <Container>
         <SectionTitle title="Overige werkzaamheden" />

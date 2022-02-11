@@ -1,24 +1,42 @@
 @use '../constants' as *;
 
-.background {
+.container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: -9999;
-  min-height: 50vh;
-  background-image: url('../../public/images/muziek.jpeg');
-  background-size: cover;
-  // background-position: center bottom;
-  background-position-x: center;
-  background-position-y: bottom;
+}
+
+.combinedContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+.subContainer {
+  position: relative;
 }
 
 .image {
-  // width: auto;
-  // height: 100%;
+  min-height: 75vh;
+  max-height: 100vh;
   object-fit: cover;
-  // object-position: center bottom;
+  object-position: center;
+}
+
+.combinedImage {
+  // min-height: 50vh;
+  // max-height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .overlay {
@@ -28,4 +46,13 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(c('light'), 0%), rgba(c('light'), 100%));
+}
+
+.reverseOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(c('light'), 100%), rgba(c('light'), 0%));
 }

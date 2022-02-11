@@ -1,6 +1,5 @@
 import { NextPage } from 'next'
 import React from 'react'
-import Background from '../components/Background'
 import Container from '../components/Container'
 import Page from '../components/Page'
 import PageTitle from '../components/PageTitle'
@@ -11,7 +10,6 @@ import Video from '../components/Video'
 const Muziek: NextPage = () => {
   return (
     <Page>
-      <Background type="music" />
       <PageTitle title="Muziek" />
       <Container>
         Dit is een pagina over mijn muzikale activiteiten die ik met
