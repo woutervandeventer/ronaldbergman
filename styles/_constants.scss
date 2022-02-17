@@ -25,12 +25,18 @@ $colors: (
 );
 
 $media: (
-  'm': 1024px
+  'm': 1024
 );
+
+:export {
+  @each $key, $value in $media {
+    #{unquote($key)}: $value;
+  }
+}
 
 @mixin media($size) {
   $value: map.get($media, $size);
-  @media (min-width: $value) {
+  @media (min-width: #{$value}px) {
     @content;
   }
 }
@@ -63,3 +69,9 @@ $media: (
 $margin-top: s('l');
 
 $nav-height: s('xxl');
+
+:export {
+  @each $key, $value in $media {
+    #{unquote($key)}: $value;
+  }
+}

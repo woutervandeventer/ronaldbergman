@@ -4,11 +4,13 @@
   position: relative;
 }
 
+.button {
+  all: unset;
+  cursor: pointer;
+}
+
 .items {
-  max-height: 0;
-  transition: max-height 300ms ease;
-  overflow: hidden;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1px;
   background-color: c('dark');
@@ -18,8 +20,7 @@
     color: c('dark');
     transition: all 250ms ease;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: lighten(c('dark'), 30%);
       color: c('light');
     }
@@ -37,6 +38,5 @@
 }
 
 .showItems {
-  max-height: 9em;
-  transition: max-height 300ms ease-out;
+  display: flex;
 }

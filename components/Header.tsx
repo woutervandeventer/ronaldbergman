@@ -15,43 +15,52 @@ const Header = () => {
         <ul className={styles.navLinkList}>
           <li>
             <Link href="/">
-              <a onClick={() => setShowMenu(false)}>
-                <span>Home</span>
-              </a>
+              <a onClick={() => setShowMenu(false)}>Home</a>
             </Link>
           </li>
-          <li>
-            <Dropdown
-              title="Video"
-              setShowMenu={setShowMenu}
-              items={[
-                {
-                  href: '/digitalisering',
-                  text: 'Digitalisering'
-                },
-                {
-                  href: '/registratie',
-                  text: 'Registratie'
-                },
-                {
-                  href: '/video-overig',
-                  text: 'Overige werkzaamheden'
-                }
-              ]}
-            />
-          </li>
-          <li>
-            <Link href="/muziek">
-              <a onClick={() => setShowMenu(false)}>
-                <span>Muziek</span>
-              </a>
-            </Link>
-          </li>
+          <Dropdown
+            title="Video"
+            setShowMenu={setShowMenu}
+            items={[
+              {
+                href: '/video/digitalisering',
+                text: 'Digitalisering'
+              },
+              {
+                href: '/video/registratie',
+                text: 'Registratie'
+              },
+              {
+                href: '/video/overig',
+                text: 'Overige werkzaamheden'
+              }
+            ]}
+          />
+          <Dropdown
+            title="Muziek"
+            setShowMenu={setShowMenu}
+            items={[
+              {
+                href: '/muziek/brazilie',
+                text: 'Brazilië'
+              },
+              {
+                href: '/muziek/indonesie',
+                text: 'Indonesië'
+              },
+              {
+                href: '/muziek/achtergrond',
+                text: 'Mijn achtergrond'
+              },
+              {
+                href: '/muziek/componeren',
+                text: 'Componeren'
+              }
+            ]}
+          />
           <li>
             <Link href="/contact">
-              <a onClick={() => setShowMenu(false)}>
-                <span>Contact</span>
-              </a>
+              <a onClick={() => setShowMenu(false)}>Contact</a>
             </Link>
           </li>
         </ul>

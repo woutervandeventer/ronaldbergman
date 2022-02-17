@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import React, { SyntheticEvent, useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from '../styles/components/Dropdown.module.scss'
+import useMediaQuery from '../utility/useMediaQuery'
+import useOnClickOutside from '../utility/useOnClickOutsite'
 
 type Item = {
   href: string
@@ -10,63 +12,50 @@ type Item = {
 interface Props {
   title: string
   items: Item[]
-  setShowMenu?: React.Dispatch<React.SetStateAction<boolean>>
+  setShowMenu: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const Dropdown = ({ title, items, setShowMenu }: Props) => {
   const [showItems, setShowItems] = useState(false)
-  const dropdownRef = useRef<HTMLDivElement>(null)
+  const ref = useRef(null)
+  const isLargeScreen = useMediaQuery(`(min-width: ${styles.m}px)`)
 
-  const useOutsideAlerter = () => {
-    useEffect(() => {
-      const handleClickOutside = (event) => {
-        if (
-          dropdownRef.current &&
-          !dropdownRef.current.contains(event.target)
-        ) {
-          setShowItems(false)
-        }
-      }
-
-      document.addEventListener('mousedown', handleClickOutside)
-
-      return () => {
-        document.removeEventListener('mousedown', handleClickOutside)
-      }
-    })
-  }
-
-  useOutsideAlerter()
-
-  const handleClick = () => {
+  const handleClickOutside = () => {
     setShowItems(false)
-    setShowMenu && setShowMenu(false)
   }
+
+  useOnClickOutside(ref, handleClickOutside)
 
   return (
-    <div
+    <li
       className={styles.container}
-      ref={dropdownRef}
-      onMouseEnter={() => setShowItems(true)}
-      onMouseLeave={() => setShowItems(false)}
+      ref={ref}
+      onMouseEnter={() => isLargeScreen && setShowItems(true)}
+      onMouseLeave={() => isLargeScreen && setShowItems(false)}
     >
-      <span
-        onClick={() => {
-          setShowItems(!showItems)
-        }}
+      <button
+        className={styles.button}
+        onClick={() => !isLargeScreen && setShowItems(!showItems)}
       >
         {title}
-      </span>
+      </button>
       <ul className={`${styles.items} ${showItems && styles.showItems}`}>
         {items.map((item, i) => (
           <li key={i}>
             <Link href={item.href}>
-              <a onClick={handleClick}>{item.text}</a>
+              <a
+                onClick={() => {
+                  setShowItems(false)
+                  setShowMenu(false)
+                }}
+              >
+                {item.text}
+              </a>
             </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </li>
   )
 }
 

@@ -1,12 +1,12 @@
 import { NextPage } from 'next'
 import React, { useRef } from 'react'
-import Container from '../components/Container'
-import Page from '../components/Page'
-import PageTitle from '../components/PageTitle'
-import SectionDivider from '../components/SectionDivider'
-import SectionTitle from '../components/SectionTitle'
-import Video from '../components/Video'
-import styles from '../styles/components/VideoOverig.module.scss'
+import Container from '../../components/Container'
+import Page from '../../components/Page'
+import PageTitle from '../../components/PageTitle'
+import SectionDivider from '../../components/SectionDivider'
+import SectionTitle from '../../components/SectionTitle'
+import Video from '../../components/Video'
+import styles from '../../styles/components/VideoOverig.module.scss'
 
 const VideoOverig: NextPage = () => {
   const programmaboekjesRef = useRef<HTMLElement>(null)

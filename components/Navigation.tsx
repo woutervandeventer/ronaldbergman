@@ -8,13 +8,13 @@ const Navigation = () => {
       Ga verder naar:
       <ul className={styles.navigation}>
         <li>
-          <Button href="/digitalisering" title="Digitalisering" />
+          <Button href="/video/digitalisering" title="Digitalisering" />
         </li>
         <li>
-          <Button href="/registratie" title="Registratie" />
+          <Button href="/video/registratie" title="Registratie" />
         </li>
         <li>
-          <Button href="/video-overig" title="Video overig" />
+          <Button href="/video/overig" title="Video overig" />
         </li>
         <li>
           <Button href="/muziek" title="Muziek" />
