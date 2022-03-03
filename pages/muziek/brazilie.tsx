@@ -1,11 +1,14 @@
 import { NextPage } from 'next'
 import React from 'react'
 import Container from '../../components/Container'
+import CustomImage from '../../components/CustomImage'
 import Page from '../../components/Page'
 import PageTitle from '../../components/PageTitle'
 import SectionDivider from '../../components/SectionDivider'
 import SectionTitle from '../../components/SectionTitle'
 import Video from '../../components/Video'
+import chorosambassanova from '../../public/images/chorosambassanova.jpg'
+import conjuntoHaiano from '../../public/images/conjunto-haiano.jpg'
 
 const Muziek: NextPage = () => {
   return (
@@ -14,6 +17,12 @@ const Muziek: NextPage = () => {
       <Container>
         <section>
           <SectionTitle title="Brazilië" />
+          <div>
+            <CustomImage
+              src={chorosambassanova}
+              alt="Foto van de groep ChoroSambassaNova"
+            />
+          </div>
           <p>
             Met onze groep <span className="bold">ChoroSamBassaNova</span>{' '}
             spelen wij met zijn drieën muziek uit Brazilië. Hier een klein
@@ -35,6 +44,12 @@ const Muziek: NextPage = () => {
             te beluisteren.
           </p>
           <SectionDivider />
+          <div>
+            <CustomImage
+              src={conjuntoHaiano}
+              alt="Foto van de groep Conjunto Haiano"
+            />
+          </div>
           <p>
             Een aantal jaren geleden heb ik met 3 vrienden van mij de groep{' '}
             <span className="bold">Conjunto Haiano</span> (vert. Haagse

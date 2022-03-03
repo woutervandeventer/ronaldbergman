@@ -17,10 +17,16 @@ const Navigation = () => {
           <Button href="/video/overig" title="Video overig" />
         </li>
         <li>
-          <Button href="/muziek" title="Muziek" />
+          <Button href="/muziek/brazilie" title="Brazilië" />
         </li>
         <li>
-          <Button href="/prijslijst" title="Prijslijst" />
+          <Button href="/muziek/indonesie" title="Indonesië" />
+        </li>
+        <li>
+          <Button href="/muziek/achtergrond" title="Muzikale achtergrond" />
+        </li>
+        <li>
+          <Button href="/muziek/componeren" title="Componeren" />
         </li>
         <li>
           <Button href="/contact" title="Contact" />

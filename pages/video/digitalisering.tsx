@@ -4,6 +4,9 @@ import Page from '../../components/Page'
 import PageTitle from '../../components/PageTitle'
 import SectionDivider from '../../components/SectionDivider'
 import SectionTitle from '../../components/SectionTitle'
+import videodragers from '../../public/images/videodragers.jpg'
+import entreeTurkije from '../../public/images/5e-entree-turkije.jpg'
+import CustomImage from '../../components/CustomImage'
 
 const Digitalisering: NextPage = () => {
   return (
@@ -27,10 +30,12 @@ const Digitalisering: NextPage = () => {
             gedaan. Om dit te verbeteren moet er wel nog het e.e.a. aan
             gebeuren.
           </p>
-          <img
-            src="/images/videodragers.JPG"
-            alt="Verschillende videodragers: VHS, Hi8 en DVD"
-          />
+          <div>
+            <CustomImage
+              src={videodragers}
+              alt="Verschillende videodragers: VHS, Hi8 en DVD"
+            />
+          </div>
           <p>
             <span className="bold">2)</span> Met{' '}
             <span className="bold">revisie</span> kan ik het gedigitaliseerde
@@ -60,10 +65,9 @@ const Digitalisering: NextPage = () => {
             tijdschema met alle hoofdstukken welke u in de omschrijving bij uw
             media kunt toevoegen.
           </p>
-          <img
-            src="/images/5e-entree-turkije.jpg"
-            alt="Vijfde entrée Turkije"
-          />
+          <div>
+            <CustomImage src={entreeTurkije} alt="Vijfde entrée Turkije" />
+          </div>
         </section>
         <SectionDivider />
         <section>

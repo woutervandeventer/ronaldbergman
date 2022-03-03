@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Header />
-      <Background />
       <Component {...pageProps} />
       <Footer />
     </>

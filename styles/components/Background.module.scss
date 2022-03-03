@@ -26,3 +26,13 @@
   height: 100%;
   background: linear-gradient(rgba(c('light'), 0%), rgba(c('light'), 100%));
 }
+
+@include media('m') {
+  .container {
+    top: $nav-height;
+  }
+
+  .imgWrapper {
+    max-height: calc(100vh - $nav-height);
+  }
+}

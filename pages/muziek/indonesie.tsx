@@ -1,11 +1,15 @@
 import { NextPage } from 'next'
 import React from 'react'
 import Container from '../../components/Container'
+import CustomImage from '../../components/CustomImage'
 import Page from '../../components/Page'
 import PageTitle from '../../components/PageTitle'
 import SectionDivider from '../../components/SectionDivider'
 import SectionTitle from '../../components/SectionTitle'
 import Video from '../../components/Video'
+import dangiangParahiangan from '../../public/images/dangiang-parahiangan-large.jpeg'
+import dinand from '../../public/images/dinand.jpg'
+import dinand2 from '../../public/images/dinand2.jpg'
 
 const Muziek: NextPage = () => {
   return (
@@ -14,6 +18,12 @@ const Muziek: NextPage = () => {
       <Container>
         <section>
           <SectionTitle title="Indonesië" />
+          <div>
+            <CustomImage
+              src={dangiangParahiangan}
+              alt="Foto van de groep Dangiang Parahiangan"
+            />
+          </div>
           <p>
             <span className="bold">Dangiang Parahiangan</span> is de naam van
             onze groep opgericht door Wim van Zanten. Wij spelen klassieke
@@ -60,6 +70,9 @@ const Muziek: NextPage = () => {
             voor tijdens de yoga- en meditatiepraktijken.
           </p>
           <SectionDivider />
+          <div>
+            <CustomImage src={dinand} alt="Foto met Dinand Woesthoff" />
+          </div>
           <p>
             Popster <span className="bold">Dinand Woesthoff</span> heeft mij
             uitgenodigd om in zijn groep mee te spelen tijdens een pop venue in
@@ -76,6 +89,9 @@ const Muziek: NextPage = () => {
             formulier, tevens contactformulier waarop alle benodigde informatie
             staat en waarop u uw wensen kenbaar kunt maken.
           </p>
+          <div>
+            <CustomImage src={dinand2} alt="Foto met Dinand Woesthoff" />
+          </div>
         </section>
       </Container>
     </Page>

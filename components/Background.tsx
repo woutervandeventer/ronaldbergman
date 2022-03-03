@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/components/Background.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -9,20 +9,22 @@ import videoMuziek from '../public/images/video-muziek.jpg'
 const Background = () => {
   const currentPath = useRouter().pathname
 
-  let src = videoMuziek
+  const [src, setSrc] = useState(videoMuziek)
 
-  if (currentPath.startsWith('/video')) {
-    src = video
-  }
+  useEffect(() => {
+    if (currentPath.startsWith('/video')) {
+      setSrc(video)
+    }
 
-  if (currentPath.startsWith('/muziek')) {
-    src = muziek
-  }
+    if (currentPath.startsWith('/muziek')) {
+      setSrc(muziek)
+    }
+  }, [currentPath])
 
   return (
     <div className={styles.container}>
       <div className={styles.imgWrapper}>
-        <Image src={src} alt="Achtergrondfoto" layout="responsive" />
+        <Image src={src} alt="Achtergrondfoto" layout="responsive" priority />
         <div className={styles.overlay}></div>
       </div>
     </div>

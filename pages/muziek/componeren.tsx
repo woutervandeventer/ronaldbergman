@@ -1,11 +1,12 @@
 import { NextPage } from 'next'
 import React from 'react'
 import Container from '../../components/Container'
+import CustomImage from '../../components/CustomImage'
+import Jukebox from '../../components/Jukebox'
 import Page from '../../components/Page'
 import PageTitle from '../../components/PageTitle'
-import SectionDivider from '../../components/SectionDivider'
 import SectionTitle from '../../components/SectionTitle'
-import Video from '../../components/Video'
+import wordsOnWings from '../../public/images/words-on-wings.jpg'
 
 const Muziek: NextPage = () => {
   return (
@@ -22,27 +23,31 @@ const Muziek: NextPage = () => {
             instrumentale muziek in Choro, Samba en Bossa Nova stijl.
           </p>
           <p className="bold">Liederen</p>
+          <div>
+            <CustomImage src={wordsOnWings} alt="Words On Wings" />
+          </div>
           <p>
             Later ben ik gedichten tegengekomen van jazz-zangeres Joy Misa die
             mij inspireerden tot het schrijven van liederen. Het resultaat werd
-            door haar art songs genoemd. Van een paar songs werd het meerdere
-            tot een aantal van 20. Hieruit ontstond een project genaamd Words on
-            Wings. Door samensmelting van poëzie en muziek kregen woorden
-            vleugels. De inhoud van haar gedichten zijn merendeels emoties,
-            levenservaringen dat met heel veel sfeer werd verwoord. Ik liet mijn
-            fantasie gaan. Iemand die naar het resultaat luisterde, ervaarde dit
-            alsof ze naar een film zat te kijken. Zo heb ik haar gedichten ook
-            ervaren omdat haar taal beeldend is. Op mijn beurt noem ik ze weer
-            art movie songs. Ze haalt de natuur vaak aan als metafoor. De
-            metamorfose van gedicht/muziek naar song is een bijzonder proces
-            gebaseerd voornamelijk op gehoor en intuïtie. Kennis en techniek
-            komen pas later aan de orde.
+            door haar <span className="bold">art songs</span> genoemd. Van een
+            paar songs werd het meerdere tot een aantal van 20. Hieruit ontstond
+            een project genaamd <span className="bold">Words on Wings</span>.
+            Door samensmelting van poëzie en muziek kregen woorden vleugels. De
+            inhoud van haar gedichten zijn merendeels emoties, levenservaringen
+            dat met heel veel sfeer werd verwoord. Ik liet mijn fantasie gaan.
+            Iemand die naar het resultaat luisterde, ervaarde dit alsof ze naar
+            een film zat te kijken. Zo heb ik haar gedichten ook ervaren omdat
+            haar taal beeldend is. Op mijn beurt noem ik ze weer{' '}
+            <span className="bold">art movie songs</span>. Ze haalt de natuur
+            vaak aan als metafoor. De metamorfose van gedicht/muziek naar song
+            is een bijzonder proces gebaseerd voornamelijk op gehoor en
+            intuïtie. Kennis en techniek komen pas later aan de orde.
           </p>
           <p>
             Hier een aantal songs met vermelding van stijl/ritme, titel, link en
             de inhoud van het gedicht in het kort zoals ik het heb ervaren.
           </p>
-          <p className="bold">Jukebox</p>
+          <Jukebox />
           <p>
             Dit zijn opnames met onze groep Words on Wings tijdens ons optreden
             in de Centrale Bibliotheek Den Haag.

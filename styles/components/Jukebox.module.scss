@@ -1,0 +1,68 @@
+@use '../constants' as *;
+
+.list {
+  display: grid;
+  gap: s('m');
+
+  @include media('m') {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  @include shadow;
+  transition: transform 300ms ease;
+
+  &:hover {
+    transform: scale(103%);
+  }
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: s('m');
+  color: c('white');
+  background-color: rgba(c('black'), 0.75);
+  transition: opacity 150ms ease-out;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.description {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.iframeWrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
