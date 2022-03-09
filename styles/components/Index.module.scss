@@ -2,6 +2,8 @@
 
 .introText {
   padding: s('xxl') s('xs');
+  max-width: 30ch;
+  margin: 0 auto;
   color: c('dark');
   font-weight: 900;
   text-align: center;
