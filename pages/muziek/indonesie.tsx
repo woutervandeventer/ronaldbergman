@@ -18,12 +18,15 @@ const Muziek: NextPage = () => {
       <Container>
         <section>
           <SectionTitle title="Indonesië" />
+
           <div>
             <CustomImage
               src={dangiangParahiangan}
               alt="Foto van de groep Dangiang Parahiangan"
+              maxWidth={400}
             />
           </div>
+
           <p>
             <span className="bold">Dangiang Parahiangan</span> is de naam van
             onze groep opgericht door Wim van Zanten. Wij spelen klassieke
@@ -70,9 +73,15 @@ const Muziek: NextPage = () => {
             voor tijdens de yoga- en meditatiepraktijken.
           </p>
           <SectionDivider />
+
           <div>
-            <CustomImage src={dinand} alt="Foto met Dinand Woesthoff" />
+            <CustomImage
+              src={dinand}
+              alt="Foto met Dinand Woesthoff"
+              maxWidth={600}
+            />
           </div>
+
           <p>
             Popster <span className="bold">Dinand Woesthoff</span> heeft mij
             uitgenodigd om in zijn groep mee te spelen tijdens een pop venue in

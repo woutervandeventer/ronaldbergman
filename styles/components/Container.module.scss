@@ -1,11 +1,9 @@
 @use '../constants' as *;
 
 .container {
-  padding: s('m');
-
+  padding: s('xl') s('m');
   margin-bottom: s('xl');
   background-color: rgba(c('light'), 0.7);
-
   display: grid;
   grid-template-columns: 1fr minmax(min-content, 70ch) 1fr;
 
@@ -19,16 +17,12 @@
   }
 
   @include media('m') {
-    max-width: 90ch;
+    width: fit-content;
     margin-right: auto;
     margin-left: auto;
     padding: s('xxxl') 0;
     border-radius: s('xxxs');
 
-    // grid-template-columns: 1fr minmax(min-content, 70ch) 1fr;
-
-    // & > * {
-    //   grid-column: 2 / -2;
-    // }
+    grid-template-columns: 5vw minmax(min-content, 70ch) 5vw;
   }
 }

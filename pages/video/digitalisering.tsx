@@ -19,8 +19,7 @@ const Digitalisering: NextPage = () => {
             Ik kan het analoog videomateriaal digitaal omzetten in vier fasen:
           </p>
           <p>
-            <span className="bold">1)</span> Met{' '}
-            <span className="bold">capture</span> (verkrijgen) kan ik het
+            1) Met <span className="bold">capture</span> (verkrijgen) kan ik het
             analoog materiaal in de vorm van VHS, Hi8 en VCI-videobanden
             omzetten in een tijdelijke digitale vorm zoals b.v. een MV4-bestand
             welke ik op een DVD zet.
@@ -36,20 +35,22 @@ const Digitalisering: NextPage = () => {
               alt="Verschillende videodragers: VHS, Hi8 en DVD"
             />
           </div>
+
           <p>
-            <span className="bold">2)</span> Met{' '}
-            <span className="bold">revisie</span> kan ik het gedigitaliseerde
-            materiaal schoonpoetsen door fletse kleuren, doffe audio helder te
-            maken en te versterken en slechte stukken te verwijderen.
+            2) Met <span className="bold">revisie</span> kan ik het
+            gedigitaliseerde materiaal schoonpoetsen door fletse kleuren, doffe
+            audio helder te maken en te versterken en slechte stukken te
+            verwijderen.
           </p>
+
           <p>
-            <span className="bold">3)</span> Met{' '}
-            <span className="bold">editing</span> kan ik titels en overgangen
-            aanbrengen en nieuwe audio, foto’s en video’s toevoegen. En dan moet
-            dit geheel nog kunnen worden afgespeeld.
+            3) Met <span className="bold">editing</span> kan ik titels en
+            overgangen aanbrengen en nieuwe audio, foto’s en video’s toevoegen.
+            En dan moet dit geheel nog kunnen worden afgespeeld.
           </p>
+
           <p>
-            <span className="bold">4)</span> Alvorens het bewerkte materiaal op{' '}
+            4) Alvorens het bewerkte materiaal op{' '}
             <span className="bold">dvd</span> of{' '}
             <span className="bold">blu-ray</span> te branden, kan ik naar wens
             een menu met een aantal hoofdstukken toevoegen, afhankelijk van de

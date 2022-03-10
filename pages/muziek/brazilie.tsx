@@ -44,12 +44,15 @@ const Muziek: NextPage = () => {
             te beluisteren.
           </p>
           <SectionDivider />
+
           <div>
             <CustomImage
               src={conjuntoHaiano}
               alt="Foto van de groep Conjunto Haiano"
+              maxWidth={500}
             />
           </div>
+
           <p>
             Een aantal jaren geleden heb ik met 3 vrienden van mij de groep{' '}
             <span className="bold">Conjunto Haiano</span> (vert. Haagse

@@ -23,9 +23,15 @@ const Muziek: NextPage = () => {
             instrumentale muziek in Choro, Samba en Bossa Nova stijl.
           </p>
           <p className="bold">Liederen</p>
+
           <div>
-            <CustomImage src={wordsOnWings} alt="Words On Wings" />
+            <CustomImage
+              src={wordsOnWings}
+              alt="Words On Wings"
+              maxWidth={400}
+            />
           </div>
+
           <p>
             Later ben ik gedichten tegengekomen van jazz-zangeres Joy Misa die
             mij inspireerden tot het schrijven van liederen. Het resultaat werd

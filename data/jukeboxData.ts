@@ -48,11 +48,11 @@ export const jukeboxData = [
     description:
       'Licht en donker, liefhebben en lachen geven constant energie aan het systeem van het leven',
     videoId: 'mjNHdjEynmo'
-  },
-  {
-    title: 'Fire',
-    style: 'Rumba',
-    description: 'Na brand komt vruchtbaarheid.',
-    videoId: 'E80-UMimIHE'
   }
+  // {
+  //   title: 'Fire',
+  //   style: 'Rumba',
+  //   description: 'Na brand komt vruchtbaarheid.',
+  //   videoId: 'E80-UMimIHE'
+  // }
 ]

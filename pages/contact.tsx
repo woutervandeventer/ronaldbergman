@@ -10,10 +10,6 @@ const Contact = () => {
       <PageTitle title="Contact" />
       <Container>
         <SectionTitle title="Contactformulier" />
-        <p>
-          Met het onderstaande formulier kunt u contact met mij opnemen. Indien
-          u iets wilt bestellen kunt u dat bij de keuze aangeven.
-        </p>
       </Container>
     </Page>
   )

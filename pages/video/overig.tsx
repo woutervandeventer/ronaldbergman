@@ -32,6 +32,7 @@ const VideoOverig: NextPage = () => {
       <PageTitle title="Video" />
       <Container>
         <SectionTitle title="Overige werkzaamheden" />
+
         <nav className={styles.nav}>
           <div>
             Naast digitalisering en registratie bied ik ook de volgende diensten
@@ -94,6 +95,8 @@ const VideoOverig: NextPage = () => {
             </li>
           </ul>
         </nav>
+
+        <SectionDivider />
         <section ref={programmaboekjesRef}>
           <SectionTitle title="Programmaboekjes digitaliseren" />
           <p>
@@ -104,6 +107,7 @@ const VideoOverig: NextPage = () => {
           <Video src="https://www.youtube.com/embed/b4a04qxyM74" />
           <Video src="https://www.youtube.com/embed/E5wSDdyUbFw" />
         </section>
+
         <SectionDivider />
         <section ref={muziekRef}>
           <SectionTitle title="Muziek voorzien van bijpassende video" />
