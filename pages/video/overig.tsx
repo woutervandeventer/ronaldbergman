@@ -119,8 +119,8 @@ const VideoOverig: NextPage = () => {
             oud dus ik hoefde geen rekening te houden met auteursrechten.
           </p>
           <Video
-            src="https://www.youtube.com/embed/QJHSJq5hACw"
-            caption="Door deze opname begint Ida steeds meer in zicht te komen bij de internationale pianowereld."
+            src="https://www.youtube.com/embed/DV149hWoJfI"
+            caption="Door deze opname raakt Ida steeds meer zichtbaar in de internationale pianowereld."
           />
         </section>
         <SectionDivider />
