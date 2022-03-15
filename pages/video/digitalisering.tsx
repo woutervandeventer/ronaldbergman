@@ -4,7 +4,7 @@ import Page from '../../components/Page'
 import PageTitle from '../../components/PageTitle'
 import SectionDivider from '../../components/SectionDivider'
 import SectionTitle from '../../components/SectionTitle'
-import videodragers from '../../public/images/videodragers.jpg'
+import videodragers from '../../public/images/videodragers.jpeg'
 import entreeTurkije from '../../public/images/5e-entree-turkije.jpg'
 import CustomImage from '../../components/CustomImage'
 
@@ -29,10 +29,12 @@ const Digitalisering: NextPage = () => {
             gedaan. Om dit te verbeteren moet er wel nog het e.e.a. aan
             gebeuren.
           </p>
+
           <div>
             <CustomImage
               src={videodragers}
               alt="Verschillende videodragers: VHS, Hi8 en DVD"
+              priority
             />
           </div>
 

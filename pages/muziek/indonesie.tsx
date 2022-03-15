@@ -24,6 +24,7 @@ const Muziek: NextPage = () => {
               src={dangiangParahiangan}
               alt="Foto van de groep Dangiang Parahiangan"
               maxWidth={400}
+              priority
             />
           </div>
 

@@ -29,6 +29,7 @@ const Muziek: NextPage = () => {
               src={wordsOnWings}
               alt="Words On Wings"
               maxWidth={400}
+              priority
             />
           </div>
 

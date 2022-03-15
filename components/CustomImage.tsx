@@ -6,12 +6,19 @@ interface Props {
   src: StaticImageData
   alt: string
   maxWidth?: number
+  priority?: boolean
 }
 
-const CustomImage = ({ src, alt, maxWidth }: Props) => {
+const CustomImage = ({ src, alt, maxWidth, priority }: Props) => {
   return (
     <div className={styles.wrapper} style={{ maxWidth: maxWidth }}>
-      <Image src={src} alt={alt} layout="responsive" />
+      <Image
+        src={src}
+        alt={alt}
+        layout="responsive"
+        lazyBoundary="500px"
+        priority={priority}
+      />
     </div>
   )
 }

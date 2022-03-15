@@ -17,12 +17,15 @@ const Muziek: NextPage = () => {
       <Container>
         <section>
           <SectionTitle title="Brazilië" />
+
           <div>
             <CustomImage
               src={chorosambassanova}
               alt="Foto van de groep ChoroSambassaNova"
+              priority
             />
           </div>
+
           <p>
             Met onze groep <span className="bold">ChoroSamBassaNova</span>{' '}
             spelen wij met zijn drieën muziek uit Brazilië. Hier een klein

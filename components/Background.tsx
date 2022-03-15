@@ -14,10 +14,10 @@ const Background = () => {
   useEffect(() => {
     if (currentPath.startsWith('/video')) {
       setSrc(video)
-    }
-
-    if (currentPath.startsWith('/muziek')) {
+    } else if (currentPath.startsWith('/muziek')) {
       setSrc(muziek)
+    } else {
+      setSrc(videoMuziek)
     }
   }, [currentPath])
 
