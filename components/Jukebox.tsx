@@ -47,10 +47,12 @@ const JukeboxItem = ({
           setCurrentVideoPlayingId(item.videoId)
         }}
       >
+
         <div className={styles.header}>
           <span className={styles.title}>{item.title}</span> -{' '}
           <span className={styles.style}>{item.style}</span>
         </div>
+
         <div className={styles.description}>{item.description}</div>
       </div>
 
