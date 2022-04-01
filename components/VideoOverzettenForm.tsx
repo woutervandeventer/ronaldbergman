@@ -1,81 +1,115 @@
-import React from 'react'
-import SectionTitle from './SectionTitle'
+import React from "react";
+import styles from "../styles/components/Form.module.scss";
 
 const VideoOverzettenForm = () => {
   return (
     <section>
-      <SectionTitle title="VHS video overzetten" />
-
-      <p className="bold">Basistarieven excl. BTW (21%)</p>
-
-      <table>
+      <table className={styles.table}>
         <thead>
           <tr>
-            {/* TODO: linken naar videopagina */}
-            <th>Fase I Digitalisering</th>
+            <th colSpan={2}>Tarieven digitalisering (Fase I)*</th>
           </tr>
         </thead>
 
-        <tr>
-          <td>Starttarief (tot 2 uur overzetten)</td>
-          <td>€22,50</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Starttarief (tot 2 uur overzetten)</td>
+            <td>€22,50</td>
+          </tr>
 
-        <tr>
-          <td>Per extra uur</td>
-          <td>€10,00</td>
-        </tr>
+          <tr>
+            <td>Per extra uur</td>
+            <td>€10,-</td>
+          </tr>
+        </tbody>
       </table>
+
+      <p>*excl. BTW (21%)</p>
 
       <form
         name="vhs-video-overzetten"
         method="post"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        // data-netlify-honeypot="bot-field"
+        className={styles.form}
       >
         <input type="hidden" name="form-name" value="vhs-video-overzetten" />
 
-        <p>Selecteer de duur van de tape</p>
+        <p className="bold">Selecteer de duur van de tape</p>
 
         <div>
-          <input type="radio" name="duur-tape" value="<2uur" checked />
-          Korter dan 2 uur
+          <div>
+            <input
+              type="radio"
+              name="lengte-tape"
+              value="korter dan 2 uur"
+              id="<2u"
+              required
+            />
+            <label htmlFor="<2u">Korter dan 2 uur</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              name="lengte-tape"
+              value="langer dan 2 uur"
+              id=">2u"
+              required
+            />
+            <label htmlFor=">2u">Langer dan 2 uur</label>
+          </div>
+        </div>
+
+        <p className="bold">Vink hier eventuele extra werkzaamheden aan</p>
+
+        <div>
+          <div>
+            <input type="checkbox" name="revisie" id="revisie" />
+            <label htmlFor="revisie">Fase II Revisie</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="editing" id="editing" />
+            <label htmlFor="editing">Fase III Editing</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="overzetten" id="overzetten" />
+            <label htmlFor="overzetten">Fase IV Overzetten op DVD of MP4</label>
+          </div>
         </div>
 
         <div>
-          <input type="radio" name="duur-tape" value=">2uur" />
-          Langer dan 2 uur
+          <label className="bold" htmlFor="email">
+            Uw e-mailadres
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
         </div>
-
-        <p>Vink hier eventuele extra werkzaamheden aan</p>
-
-        <div>
-          <input type="checkbox" name="revisie" />
-          Fase II Revisie
-        </div>
-
-        <div>
-          <input type="checkbox" name="editing" />
-          Fase III Editing
-        </div>
-
-        <div>
-          <input type="checkbox" name="overzetten" />
-          Fase IV Overzetten op DVD of MP4
-        </div>
-
-        <label htmlFor="email">Uw e-mailadres</label>
-        <input type="email" name="email" id="email" required />
 
         <p>
           Na het invullen van deze gegevens zal ik contact met u opnemen via uw
           e-mailadres. Indien u dit liever telefonisch of per app wilt, kunt u
-          hier uw gegevens achterlaten
+          hieronder uw gegevens achterlaten.
         </p>
 
-        <textarea name="bericht" id="messaged" cols={30} rows={10}></textarea>
+        <textarea
+          name="bericht"
+          id="messaged"
+          cols={30}
+          rows={6}
+          placeholder="Bericht"
+        />
 
-        <input type="submit" value="Versturen" />
+        <button className={styles.submitButton} type="submit">
+          Versturen
+        </button>
       </form>
 
       <p>
@@ -83,7 +117,7 @@ const VideoOverzettenForm = () => {
         ik u een offerte ter ondertekening.
       </p>
     </section>
-  )
-}
+  );
+};
 
-export default VideoOverzettenForm
+export default VideoOverzettenForm;

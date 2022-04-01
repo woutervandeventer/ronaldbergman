@@ -1,31 +1,31 @@
-@use 'sass:math';
-@use 'sass:map';
+@use "sass:math";
+@use "sass:map";
 
 $base: 1;
 $ratio: 1.618;
 
 $modular-scale: (
-  'xxxs': $base * math.pow($ratio, -4),
-  'xxs': $base * math.pow($ratio, -3),
-  'xs': $base * math.pow($ratio, -2),
-  's': $base * math.pow($ratio, -1),
-  'm': $base,
-  'l': $base * $ratio,
-  'xl': $base * math.pow($ratio, 2),
-  'xxl': $base * math.pow($ratio, 3),
-  'xxxl': $base * math.pow($ratio, 4)
+  "xxxs": $base * math.pow($ratio, -4),
+  "xxs": $base * math.pow($ratio, -3),
+  "xs": $base * math.pow($ratio, -2),
+  "s": $base * math.pow($ratio, -1),
+  "m": $base,
+  "l": $base * $ratio,
+  "xl": $base * math.pow($ratio, 2),
+  "xxl": $base * math.pow($ratio, 3),
+  "xxxl": $base * math.pow($ratio, 4),
 );
 
 $colors: (
-  'dark': #403b36,
-  'light': #fffdf7,
-  'accent': #d7816a,
-  'black': #000,
-  'white': #fff
+  "dark": #403b36,
+  "light": #fffdf7,
+  "accent": #d7816a,
+  "black": #000,
+  "white": #fff,
 );
 
 $media: (
-  'm': 900
+  "m": 900,
 );
 
 :export {
@@ -66,12 +66,18 @@ $media: (
   @return map.get($colors, $color);
 }
 
-$margin-top: s('l');
+$margin-top: s("l");
+$nav-height: s("xxl");
 
-$nav-height: s('xxl');
-
-:export {
-  @each $key, $value in $media {
-    #{unquote($key)}: $value;
+@mixin space-children($size: $margin-top) {
+  & > * + * {
+    margin-top: $size;
   }
 }
+
+// Exports media queries to use with js - not being used
+// :export {
+//   @each $key, $value in $media {
+//     #{unquote($key)}: $value;
+//   }
+// }

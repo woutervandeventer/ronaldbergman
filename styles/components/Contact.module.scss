@@ -1,0 +1,40 @@
+@use "../_constants.scss" as *;
+
+.buttonList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: s("xs");
+
+  @include media("m") {
+    gap: s("s");
+  }
+}
+
+.selectButton {
+  border: none;
+  font: inherit;
+  width: 100%;
+  height: 100%;
+  padding: s("m") s("m");
+  background-color: c("dark");
+  color: c("light");
+  line-height: 1.3em;
+  text-align: center;
+  cursor: pointer;
+
+  @include shadow;
+  transition: background-color 300ms ease;
+  font-weight: 600;
+  border-radius: s("xxxs");
+
+  &:hover,
+  &:focus,
+  &.selected {
+    background-color: c("accent");
+    outline: none;
+  }
+
+  @include media("m") {
+    padding: s("l") s("m");
+  }
+}
