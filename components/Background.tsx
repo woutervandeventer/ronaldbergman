@@ -7,28 +7,28 @@ import video from '../public/images/video.jpeg'
 import videoMuziek from '../public/images/video-muziek.jpg'
 
 const Background = () => {
-  const currentPath = useRouter().pathname
+    const currentPath = useRouter().pathname
 
-  const [src, setSrc] = useState(videoMuziek)
+    const [src, setSrc] = useState(videoMuziek)
 
-  useEffect(() => {
-    if (currentPath.startsWith('/video')) {
-      setSrc(video)
-    } else if (currentPath.startsWith('/muziek')) {
-      setSrc(muziek)
-    } else {
-      setSrc(videoMuziek)
-    }
-  }, [currentPath])
+    useEffect(() => {
+        if (currentPath.startsWith('/video')) {
+            setSrc(video)
+        } else if (currentPath.startsWith('/muziek')) {
+            setSrc(muziek)
+        } else {
+            setSrc(videoMuziek)
+        }
+    }, [currentPath])
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.imgWrapper}>
-        <Image src={src} alt="Achtergrondfoto" layout="responsive" priority />
-        <div className={styles.overlay}></div>
-      </div>
-    </div>
-  )
+    return (
+        <div className={styles.container}>
+            <div className={styles.imgWrapper}>
+                <Image src={src} alt="Achtergrondfoto" layout="responsive" priority />
+                <div className={styles.overlay}></div>
+            </div>
+        </div>
+    )
 }
 
 export default Background

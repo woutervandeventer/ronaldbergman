@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../styles/components/Form.module.scss";
+import React from 'react'
+import styles from '../styles/components/Form.module.scss'
 
 const MuziekForm = () => {
   return (
@@ -27,92 +27,105 @@ const MuziekForm = () => {
       <p>*excl. BTW (9%) en reiskosten</p>
 
       <form
-        name="muziek"
-        method="post"
-        data-netlify="true"
+        name='muziek'
+        method='post'
+        data-netlify='true'
         // data-netlify-honeypot="bot-field"
         className={styles.form}
       >
-        <input type="hidden" name="form-name" value="muziek" />
+        <input type='hidden' name='form-name' value='muziek' />
 
-        <p className="bold">Geef hier aan welke live muziek u nodig heeft</p>
+        <p className='bold'>Geef hier aan welke live muziek u nodig heeft</p>
 
         <div>
-          <p className="bold">Brazilië</p>
+          <p className='bold'>Brazilië</p>
 
           <div>
             <div>
               <input
-                type="radio"
-                name="groep"
-                value="chorosambassanova"
-                id="chorosambassanova"
+                type='radio'
+                name='groep'
+                value='chorosambassanova'
+                id='chorosambassanova'
                 required
               />
-              <label htmlFor="chorosambassanova">ChoroSamBassaNova</label>
+              <label htmlFor='chorosambassanova'>ChoroSamBassaNova</label>
             </div>
 
             <div>
               <input
-                type="radio"
-                name="groep"
-                value="conjunto-haiano"
-                id="conjunto-haiano"
+                type='radio'
+                name='groep'
+                value='conjunto-haiano'
+                id='conjunto-haiano'
                 required
               />
-              <label htmlFor="conjunto-haiano">Conjunto Haian</label>
+              <label htmlFor='conjunto-haiano'>Conjunto Haiano</label>
             </div>
 
-            <p className="bold">Indonesië</p>
+            <p className='bold'>Indonesië</p>
 
             <div>
               <input
-                type="radio"
-                name="groep"
-                value="dangiang-parahiangan"
-                id="dangiang-parahiangan"
+                type='radio'
+                name='groep'
+                value='dangiang-parahiangan'
+                id='dangiang-parahiangan'
                 required
               />
-              <label htmlFor="dangiang-parahiangan">Dangiang Parahiangan</label>
+              <label htmlFor='dangiang-parahiangan'>Dangiang Parahiangan</label>
             </div>
           </div>
         </div>
 
         <div>
-          <label className="bold" htmlFor="duur-optreden">
+          <label className='bold' htmlFor='duur-optreden'>
             De duur van het optreden
           </label>
           <input
-            type="text"
-            name="duur-optreden"
-            id="duur-optreden"
+            type='text'
+            name='duur-optreden'
+            id='duur-optreden'
             required
-            placeholder="Bijv. 2x 45 minuten"
+            placeholder='Bijv. 2x 45 minuten'
           />
         </div>
 
         <div>
-          <label className="bold" htmlFor="locatie">
+          <label className='bold' htmlFor='locatie'>
             De locatie
           </label>
           <input
-            type="text"
-            name="locatie"
-            id="locatie"
+            type='text'
+            name='locatie'
+            id='locatie'
             required
-            placeholder="Adres"
+            placeholder='Adres'
           />
         </div>
 
         <div>
-          <label className="bold" htmlFor="email">
+          <label className='bold' htmlFor='naam'>
+            Uw naam
+          </label>
+          <input
+            type='text'
+            name='naam'
+            id='naam'
+            placeholder='Naam'
+            required
+          />
+        </div>
+
+        <div>
+          <label className='bold' htmlFor='email'>
             Uw e-mailadres
           </label>
           <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
+            type='email'
+            name='email'
+            id='email'
+            placeholder='Email'
             required
           />
         </div>
@@ -124,14 +137,14 @@ const MuziekForm = () => {
         </p>
 
         <textarea
-          name="bericht"
-          id="messaged"
+          name='bericht'
+          id='messaged'
           cols={30}
           rows={6}
-          placeholder="Bericht"
+          placeholder='Bericht'
         />
 
-        <button className={styles.submitButton} type="submit">
+        <button className={styles.submitButton} type='submit'>
           Versturen
         </button>
       </form>
@@ -141,7 +154,7 @@ const MuziekForm = () => {
         ik u een offerte ter ondertekening.
       </p>
     </section>
-  );
-};
+  )
+}
 
-export default MuziekForm;
+export default MuziekForm

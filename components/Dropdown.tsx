@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useRef, useState } from 'react'
 import styles from '../styles/components/Dropdown.module.scss'
 import useMediaQuery from '../utility/useMediaQuery'
-import useOnClickOutside from '../utility/useOnClickOutsite'
+import useOnClickOutside from '../utility/useOnClickOutside'
 
 type Item = {
   href: string

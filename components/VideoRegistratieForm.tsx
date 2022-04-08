@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "../styles/components/Form.module.scss";
+import React from 'react'
+import styles from '../styles/components/Form.module.scss'
 
 const VideoRegistratieForm = () => {
   return (
@@ -27,164 +27,177 @@ const VideoRegistratieForm = () => {
       <p>*excl. BTW (21%) en reiskosten</p>
 
       <form
-        name="video-registratie"
-        method="post"
-        data-netlify="true"
+        name='video-registratie'
+        method='post'
+        data-netlify='true'
         // data-netlify-honeypot="bot-field"
         className={styles.form}
       >
-        <input type="hidden" name="form-name" value="video-registratie" />
+        <input type='hidden' name='form-name' value='video-registratie' />
 
-        <p className="bold">Selecteer de duur van het filmen</p>
+        <p className='bold'>Selecteer de duur van het filmen</p>
 
         <div>
           <div>
             <input
-              type="radio"
-              name="lengte-registratie"
-              value="korter dan 2 uur"
-              id="<2"
+              type='radio'
+              name='lengte-registratie'
+              value='korter dan 2 uur'
+              id='<2'
               required
             />
-            <label htmlFor="<2">Korter dan 2 uur</label>
+            <label htmlFor='<2'>Korter dan 2 uur</label>
           </div>
 
           <div>
             <input
-              type="radio"
-              name="lengte-registratie"
-              value="langer dan 2 uur"
-              id=">2"
+              type='radio'
+              name='lengte-registratie'
+              value='langer dan 2 uur'
+              id='>2'
               required
             />
-            <label htmlFor=">2">Langer dan 2 uur</label>
+            <label htmlFor='>2'>Langer dan 2 uur</label>
           </div>
         </div>
 
         <div>
-          <p className="bold">Vink hier aan wat u geregistreerd wilt hebben</p>
+          <p className='bold'>Vink hier aan wat u geregistreerd wilt hebben</p>
 
           <div>
             <div>
-              <input type="checkbox" name="muziek" id="muziek" />
-              <label htmlFor="muziek">Muziek</label>
+              <input type='checkbox' name='muziek' id='muziek' />
+              <label htmlFor='muziek'>Muziek</label>
             </div>
 
             <div>
-              <input type="checkbox" name="dans" id="dans" />
-              <label htmlFor="dans">Dans</label>
+              <input type='checkbox' name='dans' id='dans' />
+              <label htmlFor='dans'>Dans</label>
             </div>
 
             <div>
-              <input type="checkbox" name="toneel" id="toneel" />
-              <label htmlFor="toneel">Toneel</label>
+              <input type='checkbox' name='toneel' id='toneel' />
+              <label htmlFor='toneel'>Toneel</label>
             </div>
 
             <div>
-              <input type="checkbox" name="opening" id="opening" />
-              <label htmlFor="opening">
+              <input type='checkbox' name='opening' id='opening' />
+              <label htmlFor='opening'>
                 Openingen van bijvoorbeeld galeries
               </label>
             </div>
 
             <div>
-              <input type="checkbox" name="overig" id="overig" />
-              <label htmlFor="overig">Overige optredens of evenementen</label>
+              <input type='checkbox' name='overig' id='overig' />
+              <label htmlFor='overig'>Overige optredens of evenementen</label>
             </div>
           </div>
         </div>
 
         <div>
-          <p className="bold">Vink hier eventuele overige opdrachten aan</p>
+          <p className='bold'>Vink hier eventuele overige opdrachten aan</p>
 
           <div>
             <input
-              type="checkbox"
-              name="programmaboekjes"
-              id="programmaboekjes"
+              type='checkbox'
+              name='programmaboekjes'
+              id='programmaboekjes'
             />
-            <label htmlFor="programmaboekjes">
+            <label htmlFor='programmaboekjes'>
               Programmaboekjes digitaliseren
             </label>
           </div>
 
           <div>
             <input
-              type="checkbox"
-              name="muziek-voorzien-van-video"
-              id="muziek-voorzien-van-video"
+              type='checkbox'
+              name='muziek-voorzien-van-video'
+              id='muziek-voorzien-van-video'
             />
-            <label htmlFor="muziek-voorzien-van-video">
+            <label htmlFor='muziek-voorzien-van-video'>
               Muziek voorzien van bijpassende video
             </label>
           </div>
 
           <div>
             <input
-              type="checkbox"
-              name="video-voorzien-van-muziek"
-              id="video-voorzien-van-muziek"
+              type='checkbox'
+              name='video-voorzien-van-muziek'
+              id='video-voorzien-van-muziek'
             />
-            <label htmlFor="video-voorzien-van-muziek">
+            <label htmlFor='video-voorzien-van-muziek'>
               Video voorzien van bijpassende muziek
             </label>
           </div>
 
           <div>
-            <input type="checkbox" name="teasers" id="teasers" />
-            <label htmlFor="teasers">Teasers</label>
+            <input type='checkbox' name='teasers' id='teasers' />
+            <label htmlFor='teasers'>Teasers</label>
           </div>
 
           <div>
-            <input type="checkbox" name="clips" id="clips" />
-            <label htmlFor="clips">Clips</label>
+            <input type='checkbox' name='clips' id='clips' />
+            <label htmlFor='clips'>Clips</label>
           </div>
 
           <div>
             <input
-              type="checkbox"
-              name="muziek-vervangen"
-              id="muziek-vervangen"
+              type='checkbox'
+              name='muziek-vervangen'
+              id='muziek-vervangen'
             />
-            <label htmlFor="muziek-vervangen">Muziek vervangen</label>
+            <label htmlFor='muziek-vervangen'>Muziek vervangen</label>
           </div>
         </div>
 
         <div>
-          <label className="bold" htmlFor="duur-registratie">
+          <label className='bold' htmlFor='duur-registratie'>
             De duur van het registratie
           </label>
           <input
-            type="text"
-            name="duur-registratie"
-            id="duur-registratie"
+            type='text'
+            name='duur-registratie'
+            id='duur-registratie'
             required
-            placeholder="Bijv. 45 minuten"
+            placeholder='Bijv. 45 minuten'
           />
         </div>
 
         <div>
-          <label className="bold" htmlFor="locatie">
+          <label className='bold' htmlFor='locatie'>
             De locatie
           </label>
           <input
-            type="text"
-            name="locatie"
-            id="locatie"
+            type='text'
+            name='locatie'
+            id='locatie'
             required
-            placeholder="Adres"
+            placeholder='Adres'
           />
         </div>
 
         <div>
-          <label className="bold" htmlFor="email">
+          <label className='bold' htmlFor='naam'>
+            Uw naam
+          </label>
+          <input
+            type='text'
+            name='naam'
+            id='naam'
+            placeholder='Naam'
+            required
+          />
+        </div>
+
+        <div>
+          <label className='bold' htmlFor='email'>
             Uw e-mailadres
           </label>
           <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
+            type='email'
+            name='email'
+            id='email'
+            placeholder='Email'
             required
           />
         </div>
@@ -196,14 +209,14 @@ const VideoRegistratieForm = () => {
         </p>
 
         <textarea
-          name="bericht"
-          id="messaged"
+          name='bericht'
+          id='messaged'
           cols={30}
           rows={6}
-          placeholder="Bericht"
+          placeholder='Bericht'
         />
 
-        <button className={styles.submitButton} type="submit">
+        <button className={styles.submitButton} type='submit'>
           Versturen
         </button>
       </form>
@@ -213,7 +226,7 @@ const VideoRegistratieForm = () => {
         ik u een offerte ter ondertekening.
       </p>
     </section>
-  );
-};
+  )
+}
 
-export default VideoRegistratieForm;
+export default VideoRegistratieForm
