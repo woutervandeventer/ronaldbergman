@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import React from 'react'
 import Container from '../../components/Container'
 import CustomImage from '../../components/CustomImage'
@@ -74,7 +75,10 @@ const Muziek: NextPage = () => {
               Wij hopen dit project levend te kunnen houden in de vorm van
               optredens en professionele opnames. Financieel kunnen wij dat
               echter niet alleen realiseren. Wij blijven het e.e.a. proberen.
-              Mocht u daar ideeën over hebben dan kunt hier in dit formulier
+              Mocht u daar ideeën over hebben dan kunt hier in{' '}
+              <Link href='/contact/muziek'>
+                <a>dit formulier</a>
+              </Link>{' '}
               vermelden. Wie weet...
             </p>
           </section>

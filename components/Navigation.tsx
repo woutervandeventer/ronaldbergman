@@ -8,28 +8,28 @@ const Navigation = () => {
       Ga verder naar:
       <ul className={styles.navigation}>
         <li>
-          <Button href="/video/digitalisering" title="Digitalisering" />
+          <Button href='/video/digitalisering' title='Digitalisering' />
         </li>
         <li>
-          <Button href="/video/registratie" title="Registratie" />
+          <Button href='/video/registratie' title='Registratie' />
         </li>
         <li>
-          <Button href="/video/overig" title="Video overig" />
+          <Button href='/video/overig' title='Video overig' />
         </li>
         <li>
-          <Button href="/muziek/brazilie" title="Brazilië" />
+          <Button href='/muziek/brazilie' title='Brazilië' />
         </li>
         <li>
-          <Button href="/muziek/indonesie" title="Indonesië" />
+          <Button href='/muziek/indonesie' title='Indonesië' />
         </li>
         <li>
-          <Button href="/muziek/achtergrond" title="Muzikale achtergrond" />
+          <Button href='/muziek/achtergrond' title='Muzikale achtergrond' />
         </li>
         <li>
-          <Button href="/muziek/componeren" title="Componeren" />
+          <Button href='/muziek/componeren' title='Componeren' />
         </li>
         <li>
-          <Button href="/contact" title="Contact" />
+          <Button href='/contact/digitaliseren' title='Contact' />
         </li>
       </ul>
     </nav>
