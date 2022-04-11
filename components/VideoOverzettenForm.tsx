@@ -7,7 +7,7 @@ const VideoOverzettenForm = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th colSpan={2}>Tarieven digitalisering (Fase I)*</th>
+            <th colSpan={2}>Tarieven (Fase I - capture)*</th>
           </tr>
         </thead>
 

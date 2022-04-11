@@ -14,55 +14,68 @@ const Header = () => {
         <Logo onClick={() => setShowMenu(false)} />
         <ul className={styles.navLinkList}>
           <li>
-            <Link href="/">
+            <Link href='/'>
               <a onClick={() => setShowMenu(false)}>Home</a>
             </Link>
           </li>
           <Dropdown
-            title="Video"
+            title='Video'
             setShowMenu={setShowMenu}
             items={[
               {
                 href: '/video/digitalisering',
-                text: 'Digitalisering'
+                text: 'Digitalisering',
               },
               {
                 href: '/video/registratie',
-                text: 'Registratie'
+                text: 'Registratie',
               },
               {
                 href: '/video/overig',
-                text: 'Overige werkzaamheden'
-              }
+                text: 'Overige werkzaamheden',
+              },
             ]}
           />
           <Dropdown
-            title="Muziek"
+            title='Muziek'
             setShowMenu={setShowMenu}
             items={[
               {
                 href: '/muziek/brazilie',
-                text: 'Brazilië'
+                text: 'Brazilië',
               },
               {
                 href: '/muziek/indonesie',
-                text: 'Indonesië'
+                text: 'Indonesië',
               },
               {
                 href: '/muziek/achtergrond',
-                text: 'Mijn achtergrond'
+                text: 'Mijn achtergrond',
               },
               {
                 href: '/muziek/componeren',
-                text: 'Componeren'
-              }
+                text: 'Componeren',
+              },
             ]}
           />
-          <li>
-            <Link href="/contact">
-              <a onClick={() => setShowMenu(false)}>Contact</a>
-            </Link>
-          </li>
+          <Dropdown
+            title='Contact'
+            setShowMenu={setShowMenu}
+            items={[
+              {
+                href: '/contact/digitaliseren',
+                text: 'Digitaliseren',
+              },
+              {
+                href: '/contact/videoregistratie',
+                text: 'Videoregistratie',
+              },
+              {
+                href: '/contact/muziek',
+                text: 'Muziek',
+              },
+            ]}
+          />
         </ul>
       </nav>
       <Burger onClick={() => setShowMenu(!showMenu)} showMenu={showMenu} />

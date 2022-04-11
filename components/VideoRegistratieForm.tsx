@@ -7,7 +7,7 @@ const VideoRegistratieForm = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th colSpan={2}>Tarieven videoregistratie*</th>
+            <th colSpan={2}>Tarieven*</th>
           </tr>
         </thead>
 

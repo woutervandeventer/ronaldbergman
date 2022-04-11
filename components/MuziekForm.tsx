@@ -7,7 +7,7 @@ const MuziekForm = () => {
       <table className={styles.table}>
         <thead>
           <tr>
-            <th colSpan={2}>Tarieven live muziek*</th>
+            <th colSpan={2}>Tarieven*</th>
           </tr>
         </thead>
 
