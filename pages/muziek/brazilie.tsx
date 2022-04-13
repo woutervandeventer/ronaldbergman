@@ -78,7 +78,7 @@ const Muziek: NextPage = () => {
             />
             <Video
               src='https://www.youtube.com/embed/vUGbS1vz_U0'
-              caption='Carinhoso - het meest bekende stuk van componist Pinxuinguinha welke iedere Braziliaan kent zoals ook het geval is bij Aquarela do Brasil (Brazil)'
+              caption='Carinhoso - het meest bekende stuk van componist Pixinguinha welke iedere Braziliaan kent zoals ook het geval is bij Aquarela do Brasil (Brazil)'
             />
             <Video
               src='https://www.youtube.com/embed/vFMB-zx-dUk'
