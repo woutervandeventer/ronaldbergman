@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import styles from '../styles/components/Background.module.scss'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -9,17 +8,15 @@ import videoMuziek from '../public/images/video-muziek-2-small.jpeg'
 const Background = () => {
   const currentPath = useRouter().pathname
 
-  const [src, setSrc] = useState(videoMuziek)
+  let src = videoMuziek
 
-  useEffect(() => {
-    if (currentPath.startsWith('/video')) {
-      setSrc(video)
-    } else if (currentPath.startsWith('/muziek')) {
-      setSrc(muziek)
-    } else {
-      setSrc(videoMuziek)
-    }
-  }, [currentPath])
+  if (currentPath.startsWith('/video')) {
+    src = video
+  }
+
+  if (currentPath.startsWith('/muziek')) {
+    src = muziek
+  }
 
   return (
     <div className={styles.container}>
