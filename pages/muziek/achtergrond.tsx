@@ -20,7 +20,7 @@ const Muziek: NextPage = () => {
           content='Van huis uit opgegroeid met popmuziek kreeg ik later interesse en ervaring in jazz, klassiek, dans en muziek uit midden Java, Brazilië en Sunda.'
         />
       </Head>
-      <Page>
+      <Page background='music'>
         <PageTitle title='Muziek' />
         <Container>
           <section>

@@ -21,7 +21,7 @@ const Muziek: NextPage = () => {
           content='Als fluitist, percussionist en zanger is Ronald bekend met Braziliaanse stijlen als Choro, Samba en Bossa Nova.'
         />
       </Head>
-      <Page>
+      <Page background='music'>
         <PageTitle title='Muziek' />
         <Container>
           <section>

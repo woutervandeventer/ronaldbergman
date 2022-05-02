@@ -37,7 +37,7 @@ const VideoOverig: NextPage = () => {
           content='Naast digitalisering en registratie van video maakt Ronald ook digitale programmaboekjes, teasers, clips en overige bewerkingen.'
         />
       </Head>
-      <Page>
+      <Page background='video'>
         <PageTitle title='Video' />
         <Container>
           <SectionTitle title='Overige werkzaamheden' />

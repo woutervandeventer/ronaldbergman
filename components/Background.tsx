@@ -1,21 +1,22 @@
 import styles from '../styles/components/Background.module.scss'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 import muziek from '../public/images/dwarsfluit-small.jpeg'
 import video from '../public/images/video-1-small.jpeg'
 import videoMuziek from '../public/images/video-muziek-2-small.jpeg'
 
-const Background = () => {
-  const currentPath = useRouter().pathname
+interface Props {
+  image?: 'video' | 'music'
+}
 
-  let src = videoMuziek
+const Background = ({ image }: Props) => {
+  let src
 
-  if (currentPath.startsWith('/video')) {
+  if (image === 'video') {
     src = video
-  }
-
-  if (currentPath.startsWith('/muziek')) {
+  } else if (image === 'music') {
     src = muziek
+  } else {
+    src = videoMuziek
   }
 
   return (

@@ -39,6 +39,7 @@ const Dropdown = ({ title, items, setShowMenu }: Props) => {
       >
         {title}
       </button>
+
       <ul className={`${styles.items} ${showItems && styles.showItems}`}>
         {items.map((item, i) => (
           <li key={i}>

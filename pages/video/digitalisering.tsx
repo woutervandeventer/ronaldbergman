@@ -19,7 +19,7 @@ const Digitalisering: NextPage = () => {
           content='Laat uw analoge videobanden in de vorm van VHS, Hi8 of VCI omzetten naar digitaal formaat.'
         />
       </Head>
-      <Page>
+      <Page background='video'>
         <PageTitle title='Video' />
         <Container>
           <section>

@@ -22,7 +22,7 @@ const Muziek: NextPage = () => {
           content='Met de groep Dangiang Parahiangan speelt Ronald klassieke muziek uit West Java.'
         />
       </Head>
-      <Page>
+      <Page background='music'>
         <PageTitle title='Muziek' />
         <Container>
           <section>

@@ -4,12 +4,13 @@ import Background from './Background'
 
 interface Props {
   children: ReactNode
+  background?: 'video' | 'music'
 }
 
-const Page = ({ children }: Props) => {
+const Page = ({ children, background }: Props) => {
   return (
     <main className={styles.main}>
-      <Background />
+      <Background image={background} />
       {children}
     </main>
   )

@@ -20,7 +20,7 @@ const Muziek: NextPage = () => {
           content='Ronald is beïnvloed door veel uiteenlopende muziekstijlen uit Europa, Noord en Zuid Amerika, Afrika en Azië. Dat heeft zijn weerslag op het schrijven van muziek.'
         />
       </Head>
-      <Page>
+      <Page background='music'>
         <PageTitle title='Muziek' />
         <Container>
           <section>

@@ -18,7 +18,7 @@ const Registratie: NextPage = () => {
           content='Laat uw dans- of muziekvoorstelling registreren op eenvoudige en natuurlijke wijze, met hoogwaardig stereogeluid.'
         />
       </Head>
-      <Page>
+      <Page background='video'>
         <PageTitle title='Video' />
         <Container>
           <section>
