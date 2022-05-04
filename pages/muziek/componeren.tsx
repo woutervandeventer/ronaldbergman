@@ -68,7 +68,8 @@ const Muziek: NextPage = () => {
             <Jukebox />
             <p>
               Dit zijn opnames met onze groep Words on Wings tijdens ons
-              optreden in de Centrale Bibliotheek Den Haag.
+              optreden in de Centrale Bibliotheek en de Haagse Kunstkring in Den
+              Haag.
             </p>
             <p className='bold'>De toekomst</p>
             <p>

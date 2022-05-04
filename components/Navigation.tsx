@@ -29,7 +29,16 @@ const Navigation = () => {
           <Button href='/muziek/componeren' title='Componeren' />
         </li>
         <li>
-          <Button href='/contact/digitaliseren' title='Contact' />
+          <Button href='/contact/digitaliseren' title='Contact digitaliseren' />
+        </li>
+        <li>
+          <Button
+            href='/contact/videoregistratie'
+            title='Contact videoregistratie'
+          />
+        </li>
+        <li>
+          <Button href='/contact/muziek' title='Contact muziek' />
         </li>
       </ul>
     </nav>

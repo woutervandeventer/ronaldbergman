@@ -55,6 +55,8 @@ const Registratie: NextPage = () => {
             src='https://www.youtube.com/embed/kdI6TnIsUns'
             caption='Dansregistratie uit 2009 met mijn vorige camera'
           />
+          <p>Hier een kort fragment met een opname met twee camera’s.</p>
+          <Video src='https://www.youtube.com/embed/snmnNxwopPs' />
         </Container>
       </Page>
     </>

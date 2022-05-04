@@ -67,7 +67,7 @@ const Muziek: NextPage = () => {
             </p>
             <p>
               Deze Sundanese muziek is weinig bekend in Nederland. Misschien in
-              een heel klein Indische kring maar het is zeker bij het
+              een heel klein Indische kring maar het is zeker bekend bij het
               Indonesisch ambassadepersoneel. In Indonesië wordt deze muziek
               vaak tijdens speciale ceremoniën gebruikt, meestal bij huwelijken.
               Ook in hotels als achtergrondmuziek. Dit vormt een zeer aangenaam

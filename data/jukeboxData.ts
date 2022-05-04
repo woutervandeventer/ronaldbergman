@@ -3,7 +3,7 @@ export const jukeboxData = [
     title: 'What you are to me',
     style: 'Bossa Nova Ballad',
     description: 'Je bent het zand waar ik me aan hecht tegen de elementen.',
-    videoId: 'TyNFPuVzdXk',
+    videoId: 'WluLkQso45o',
   },
   {
     title: 'In the end',
