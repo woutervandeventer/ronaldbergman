@@ -64,7 +64,7 @@ export const jukeboxData = [
   {
     title: 'Connections',
     style: 'Bossa Nova Indian Groove',
-    description: 'Wolf, maan en boom zijn met elkaar verbonden',
+    description: 'Wolf, maan en boom zijn met elkaar verbonden.',
     videoId: '0ZwjNy95K6E',
   },
   {
