@@ -61,4 +61,16 @@ export const jukeboxData = [
     description: 'Na brand komt vruchtbaarheid.',
     videoId: 'E80-UMimIHE',
   },
+  {
+    title: 'Connections',
+    style: 'Bossa Nova Indian Groove',
+    description: 'Wolf, maan en boom zijn met elkaar verbonden',
+    videoId: '0ZwjNy95K6E',
+  },
+  {
+    title: 'Settling in',
+    style: 'Samba',
+    description: 'Na opwinding komt het hart tot rust en droomt.',
+    videoId: 'LoNlOEPji4o',
+  },
 ]
